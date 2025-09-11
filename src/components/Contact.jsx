@@ -1,4 +1,4 @@
-function Contact() {
+export default function Contact() {
   return (
     <section id="contact">
       <h2>Contacto</h2>
@@ -10,5 +10,3 @@ function Contact() {
     </section>
   )
 }
-
-export default Contact

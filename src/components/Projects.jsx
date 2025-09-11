@@ -1,12 +1,10 @@
-function Projects() {
+export default function Projects() {
   return (
     <section id="projects">
-      <h2>Proyectos</h2>
+      <h2>Projects</h2>
       <div>
 
       </div>
     </section>
   )
 }
-
-export default Projects
