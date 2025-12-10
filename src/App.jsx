@@ -3,15 +3,13 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import CustomCursor from "./components/CustomCursor";
 
 export default function App() {
   return (
     <div>
-      <Header />
+      <CustomCursor />
       <Hero />
-      <About />
-      <Projects />
-      <Contact />
     </div>
   )
 }

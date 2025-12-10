@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.custom-cursor-enabled {
+  cursor: none;
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate3d(-50%, -50%, 0);
+  transition: opacity 120ms ease, background-color 120ms ease, border-color 120ms ease, box-shadow 200ms ease;
+  z-index: 50;
+  will-change: transform;
+}
+
+.custom-cursor-enabled .cursor-dot,
+.custom-cursor-enabled .cursor-outline {
+  display: block;
+}
+
+.custom-cursor-visible .cursor-dot,
+.custom-cursor-visible .cursor-outline {
+  opacity: 1;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+  mix-blend-mode: difference;
+}
+
+.cursor-outline {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  mix-blend-mode: difference;
+  backdrop-filter: blur(1px);
+}
