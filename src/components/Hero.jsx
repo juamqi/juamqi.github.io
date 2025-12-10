@@ -26,10 +26,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/80 pointer-events-none" />
       <div className="absolute inset-0 mix-blend-overlay opacity-25 pointer-events-none" style={ditherOverlayStyle} />
       <div className="relative z-10 text-center max-w-5xl px-6 py-24 space-y-12">
-        <h1 className="text-6xl text-extralight">
+        <h1 className="text-4xl md:text-6xl text-extralight">
           Juan Pablo Kass
         </h1>
-        <p className="text-xl">
+        <p className="mx-6 md:mx-0">
           Software developer specialized in front-end & UX/UI design.
         </p>
       </div>
